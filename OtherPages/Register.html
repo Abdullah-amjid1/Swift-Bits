@@ -5,77 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Swift Bites | Registration Form</title>
 </head>
 <body class="w-screen h-screen relative bg-[#9757d7] flex flex-col items-center justify-center gap-8" >
     <img class="absolute top-0 left-0" src="../Pictures/Header-1.png" alt="">
     <img class="absolute right-0 bottom-0" src="../Pictures/Footer-2.png" alt="">
     <div class="w-[70%] flex gap-2  justify-center">
-            <div class="flex items-center gap-2 after:content-['Wellcome'] after:text-white after:text-lg ">
+            <div class="flex items-center gap-2 after:content-['Wellcome'] after:text-white after:text-lg after:font-['red_rose'] after:font-bold">
         <span class="text-white text-2xl  bg-gray-600 py-2 px-3 rounded-full flex items-center">
             <i class="ri-add-circle-line"></i>
         </span>
     </div>
     
-    <div class="flex items-center gap-2 after:content-['Wellcome'] before:mt-2 after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-black before:border-black">
-        <span class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center">
-            <i class="ri-add-circle-line"></i>
+    <div class="flex items-center gap-2 after:content-['Demographic'] after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600 after:font-['red_rose'] after:font-bold after:rounded-xl">
+        <span class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center ">
+        <i class="ri-account-circle-fill"></i> 
         </span>
     </div>  
     
-    <div class="flex items-center gap-2 after:content-['Wellcome'] before:mt-2 after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-black before:border-black">
-        <span class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center">
-            <i class="ri-add-circle-line"></i>
+    <div class="flex items-center gap-2 after:content-['Auth']  after:font-['red_rose'] after:font-bold after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600">
+        <span class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center ">
+            <i class="ri-settings-line "></i>
         </span>
     </div>  
     
-    <div class="flex items-center gap-2 after:content-['Wellcome'] before:mt-2 after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-black before:border-black">
+    <div class="flex items-center gap-2 after:content-['Address']  after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600  after:font-['red_rose'] after:font-bold">
         <span class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center">
-            <i class="ri-add-circle-line"></i>
+            <i class="ri-map-pin-line"></i>
         </span>
     </div>  
     
     
-    <div class="flex items-center gap-2 after:content-['Wellcome'] before:mt-2 after:text-white after:text-lg  before:w-[100px] before:h-1 before:border before:bg-black before:border-black">
+    <div class="flex items-center gap-2 after:content-['Submit']  after:text-white after:text-lg  before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600 after:font-['red_rose'] after:font-bold">
         <span class="text-white text-2xl  bg-gray-600 py-2 px-3 rounded-full flex items-center">
-            <i class="ri-add-circle-line"></i>
+        <i class="ri-send-plane-fill"></i>
         </span>
     </div>
     
 
     </div>
-    <form action="" class="w-[70%] h-[550px] bg-linear-to-l from-purple-500 to-purple-400 p-10 rounded-3xl ">
+    <form action="" class="w-[70%] h-[550px] bg-linear-to-l from-purple-500 to-purple-400 p-10 rounded-3xl shadow-lg ">
         <section class="flex gap-8 hidden">
                 <div class="bg-zinc-100 w-[30%] px-4 py-10 rounded-3xl">
                 <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
                 <dotlottie-wc src="https://lottie.host/9a40edf3-36b8-4756-95aa-1c2b40d302d3/jRg2Rc6m6Q.lottie" style="width: 100%;height: 100%" speed="1" autoplay loop></dotlottie-wc>
             </div>
-            <div class="w-[60%] flex flex-col items-center text-center ">
+            <div class="w-[60%] flex flex-col items-center text-center border-l-2 border-white">
                 <div class="flex flex-col  gap-8">
                     <p class="text-white font-bold text-5xl font-[red_rose]">Register Now!</p>
                     <p class="text-white  text-xl font-[red_rose] font-semibold">Create your Swift Bites account and start ordering in seconds.</p>
                 </div>
                 <div class="flex justify-end w-full mt-70"> 
-                    <button class="bg-white text-xl font-[red_rose] font-bold px-10 py-3 rounded-2xl ">
-                        <p>Next</p>
+                    <button class="bg-purple-300 text-xl font-[red_rose] font-bold px-5 py-3 rounded-2xl text-white shadow-lg">
+                        <p class="text-shadow-md text-shadow-zinc-400">Next</p>
                     </button>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="flex gap-4">
-    <div>
-        <a class="inline-flex justify-center whitespace-nowrap rounded-lg px-3.5 py-2.5 text-sm font-medium text-slate-200 dark:text-slate-800 bg-gradient-to-r from-slate-800 to-slate-700 dark:from-slate-200 dark:to-slate-100 dark:hover:bg-slate-100 shadow focus:outline-none focus:ring focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]" href="#0">Available For Work</a>
-    </div>
-    <div class="dark">
-        <a class="inline-flex justify-center whitespace-nowrap rounded-lg px-3.5 py-2.5 text-sm font-medium text-slate-200 dark:text-slate-800 bg-gradient-to-r from-slate-800 to-slate-700 dark:from-slate-200 dark:to-slate-100 dark:hover:bg-slate-100 shadow focus:outline-none focus:ring focus:ring-slate-500/50 focus-visible:outline-none focus-visible:ring focus-visible:ring-slate-500/50 relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.2)_50%,transparent_75%,transparent_100%)] dark:before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]" href="#0">Available For Work</a>
-    </div>
-</div>
+        <section class="flex gap-10 hidden">
+            <div class="w-[35%] h-[480px] bg-white rounded-2xl ">
+                <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+                <dotlottie-wc src="https://lottie.host/22a429d4-6af5-4f61-b89d-fea714eab208/aSagsW4YK8.lottie" style="width: 100%;height: 100%; " speed="1" autoplay loop></dotlottie-wc>
+            </div>
+            <div class="border-l border-white px-30 w-[60%] flex flex-col gap-8">
+                <div>
+                    <p class="text-center text-white text-3xl font-bold font-[red_rose] text-shadow-md text-shadow-purple-700">Let’s Get to Know You!</p>
+                    <p class="text-center text-white text-lg font-bold font-[red_rose] text-shadow-md text-shadow-purple-700">Your taste journey with SwiftBit starts with your name.</p></div>
+                <div class="flex gap-2 flex-col">
+                    <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Your First Name</label>
+                    <input type="text" name="First-Name" id="" placeholder="First Name" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+                    <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Your Last Name</label>
+                    <input type="text" name="First-Name" id="" placeholder="Last Name" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+                    <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Username</label>
+                    <input type="text" name="First-Name" id="" placeholder="Username" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+                </div>
+                <div class="flex justify-between">
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-right-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></button>
+                </div>
+            </div>
         </section>
+        <section class="flex gap-10 hidden">
+            <div class="w-[35%] h-[480px] bg-white rounded-2xl ">
+                <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+                <dotlottie-wc src="https://lottie.host/42a335c7-dd7e-478c-8bc1-e2a16022c512/omxbBI1brZ.lottie" style="width: 100%;height: 100%" speed="1" autoplay loop></dotlottie-wc>
+            </div>
+            <div class="border-l border-white px-30 w-[60%] flex flex-col gap-8">
+                <div><p class="text-center text-white text-2xl font-bold font-[red_rose] text-shadow-md text-shadow-purple-700">Where should we send your tasty updates?</p>
+                <p class="text-center text-white text-xl font-bold font-[red_rose] text-shadow-md text-shadow-purple-700">Drop your email so we can stay in touch.</p>
+                </div>
+                <div class="flex gap-2 flex-col">
+                    <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Your Email</label>
+                    <input type="text" name="Email" id="" placeholder="Eamil" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+                    <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Password</label>
+                    <input type="password" name="Password" id="" placeholder="Password" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+
+                    <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Confirm Password</label>
+                    <input type="password" name="ConfirmPassword" id="" placeholder="Confirm Password" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+                </div>
+                <div class="flex justify-between">
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-right-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex gap-10 hidden">
+            <div class="w-[35%] h-[480px] bg-white rounded-2xl ">
+                <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+                <dotlottie-wc src="https://lottie.host/918306b8-c0c9-4da1-aac0-e98e173ebe65/trE6bsOKV9.lottie" style="width: 100%;height: 100%" speed="1" autoplay loop></dotlottie-wc>
+            </div>
+            <div class="border-l border-white px-30 w-[60%] flex flex-col gap-8">
+                <div><p class="text-center text-white text-2xl font-bold font-[red_rose] text-shadow-md text-shadow-purple-700">Let us know where you’re hungry!</p>
+               
+                <div class="flex gap- flex-col">
+                    <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Find You On Googel Map :</label>
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34296.558823788444!2d72.9192029!3d33.6216216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1754090065646!5m2!1sen!2s" width="100%" height="350" style="border: 2px;;" allowfullscreen="" loading="Faster" referrerpolicy="no-referrer-when-downgrade" class="rounded-3xl "></iframe>
+                </div>
+                <div class="flex justify-between pt-3 items-center">
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
+                    <a href="" class="text-white text-xl font-bold font-[red_rose] underline">Skip</a>
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-right-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></button>
+                </div>
+            </div>
+        </section>
+
+       <section class="flex gap-8 ">
+                <div class="bg-zinc-100 w-[30%] px-4 py-10 rounded-3xl">
+                <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+                <dotlottie-wc src="https://lottie.host/d0ff581c-968e-4dcb-ac26-70f023e1b8e3/Rx7bqenbUl.lottie" style="width: 300px;height: 300px" speed="1" autoplay loop></dotlottie-wc>
+            </div>
+            <div class="w-[60%] flex flex-col items-center text-center border-l-2 border-white">
+                <div class="flex flex-col  gap-8">
+                    <p class="text-white font-bold text-5xl font-[red_rose]">Submit it now!</p>
+                    <p class="text-white  text-xl font-[red_rose] font-semibold">Let’s make this official, what should we call you?</p>
+                </div>
+                <div class="flex justify-end w-full mt-70"> 
+                    <button class="bg-purple-300 text-xl font-[red_rose] font-bold px-5 py-3 rounded-2xl text-white shadow-lg">
+                        <p class="text-shadow-md text-shadow-zinc-400">Submit</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+
     </form>
     
 </body>
