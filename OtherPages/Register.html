@@ -10,48 +10,54 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Swift Bites | Registration Form</title>
 </head>
+<style>
+  .before-green::before {
+    background-color: #00A63E;
+    border-color: #00A63E;
+  }
+
+</style>
 <body class="w-screen h-screen relative bg-[#9757d7] flex flex-col items-center justify-center gap-8" >
     <img class="absolute top-0 left-0" src="../Pictures/Header-1.png" alt="">
     <img class="absolute right-0 bottom-0" src="../Pictures/Footer-2.png" alt="">
-    <div class="w-[70%] flex gap-2  justify-center">
-            <div class="flex items-center gap-2 after:content-['Wellcome'] after:text-white after:text-lg after:font-['red_rose'] after:font-bold">
-        <span class="text-white text-2xl  bg-gray-600 py-2 px-3 rounded-full flex items-center">
+    <div class="w-[70%] flex gap-2  justify-center" >
+    <div class="flex items-center gap-2 after:content-['Wellcome'] after:text-white after:text-lg after:font-['red_rose'] after:font-bold" id="div-1">
+        <span class="text-white text-2xl  bg-green-600 py-2 px-3 rounded-full flex items-center">
             <i class="ri-add-circle-line"></i>
         </span>
     </div>
     
-    <div class="flex items-center gap-2 after:content-['Demographic'] after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600 after:font-['red_rose'] after:font-bold after:rounded-xl">
-        <span class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center ">
+    <div class="flex items-center gap-2 after:content-['Demographic'] after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600 after:font-['red_rose'] after:font-bold after:rounded-xl" id="div-2">
+        <span id="Span2" class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center ">
         <i class="ri-account-circle-fill"></i> 
         </span>
     </div>  
     
-    <div class="flex items-center gap-2 after:content-['Auth']  after:font-['red_rose'] after:font-bold after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600">
-        <span class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center ">
+    <div  class="flex items-center gap-2 after:content-['Auth']  after:font-['red_rose'] after:font-bold after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600" id="div-3">
+        <span id="Span3" class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center ">
             <i class="ri-settings-line "></i>
         </span>
     </div>  
     
-    <div class="flex items-center gap-2 after:content-['Address']  after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600  after:font-['red_rose'] after:font-bold">
-        <span class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center">
-            <i class="ri-map-pin-line"></i>
+    <div class="flex items-center gap-2 after:content-['Address']  after:text-white after:text-lg before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600  after:font-['red_rose'] after:font-bold" id="div-4">
+        <span class="text-white text-2xl bg-gray-600 py-2 px-3 rounded-full flex items-center" id="Span4">
+            <i  class="ri-map-pin-line"></i>
         </span>
     </div>  
     
     
-    <div class="flex items-center gap-2 after:content-['Submit']  after:text-white after:text-lg  before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600 after:font-['red_rose'] after:font-bold">
-        <span class="text-white text-2xl  bg-gray-600 py-2 px-3 rounded-full flex items-center">
-        <i class="ri-send-plane-fill"></i>
+    <div class="flex items-center gap-2 after:content-['Submit']  after:text-white after:text-lg  before:w-[100px] before:h-1 before:border before:bg-gray-600 before:border-gray-600 after:font-['red_rose'] after:font-bold" id="div-5">
+        <span class="text-white text-2xl  bg-gray-600 py-2 px-3 rounded-full flex items-center" id="Span5">
+        <i  class="ri-send-plane-fill" ></i>
         </span>
     </div>
     
 
     </div>
-    <form action="" class="w-[70%] h-[550px] bg-linear-to-l from-purple-500 to-purple-400 p-10 rounded-3xl shadow-lg ">
-        <section class="flex gap-8 hidden">
+    <form action="" class="z-10 w-[70%] h-[550px] bg-linear-to-l from-purple-500 to-purple-400 p-10 rounded-3xl shadow-lg ">
+        <section class="flex gap-8 " id="Section-1">
                 <div class="bg-zinc-100 w-[30%] px-4 py-10 rounded-3xl">
-                <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-                <dotlottie-wc src="https://lottie.host/9a40edf3-36b8-4756-95aa-1c2b40d302d3/jRg2Rc6m6Q.lottie" style="width: 100%;height: 100%" speed="1" autoplay loop></dotlottie-wc>
+                    <iframe class="w-full h-full" src="https://lottie.host/embed/7fd8800d-7b59-4852-9d4f-8bd252c9f3ba/pfyTDNSVzr.lottie"></iframe>
             </div>
             <div class="w-[60%] flex flex-col items-center text-center border-l-2 border-white">
                 <div class="flex flex-col  gap-8">
@@ -59,16 +65,16 @@
                     <p class="text-white  text-xl font-[red_rose] font-semibold">Create your Swift Bites account and start ordering in seconds.</p>
                 </div>
                 <div class="flex justify-end w-full mt-70"> 
-                    <button class="bg-purple-300 text-xl font-[red_rose] font-bold px-5 py-3 rounded-2xl text-white shadow-lg">
+                    <button class="bg-purple-300 text-xl font-[red_rose] font-bold px-5 py-3 rounded-2xl text-white shadow-lg " onclick="Stepper(event)" type="button">
                         <p class="text-shadow-md text-shadow-zinc-400">Next</p>
                     </button>
                 </div>
             </div>
         </section>
-        <section class="flex gap-10 hidden">
+        <section class="flex gap-10 hidden " id="Section-2">
             <div class="w-[35%] h-[480px] bg-white rounded-2xl ">
-                <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-                <dotlottie-wc src="https://lottie.host/22a429d4-6af5-4f61-b89d-fea714eab208/aSagsW4YK8.lottie" style="width: 100%;height: 100%; " speed="1" autoplay loop></dotlottie-wc>
+                                   
+                <iframe class="w-full h-full" src="https://lottie.host/embed/e62ed1d0-e506-4e87-bc8e-ca5fba480165/SZunvGRw2F.lottie"></iframe>
             </div>
             <div class="border-l border-white px-30 w-[60%] flex flex-col gap-8">
                 <div>
@@ -76,22 +82,21 @@
                     <p class="text-center text-white text-lg font-bold font-[red_rose] text-shadow-md text-shadow-purple-700">Your taste journey with SwiftBit starts with your name.</p></div>
                 <div class="flex gap-2 flex-col">
                     <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Your First Name</label>
-                    <input type="text" name="First-Name" id="" placeholder="First Name" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+                    <input type="text" name="First-Name" id="" placeholder="First Name" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none" >
                     <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Your Last Name</label>
-                    <input type="text" name="First-Name" id="" placeholder="Last Name" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+                    <input type="text" name="First-Name" id="" placeholder="Last Name" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none " >
                     <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Username</label>
-                    <input type="text" name="First-Name" id="" placeholder="Username" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+                    <input type="text" name="First-Name" id="" placeholder="Username" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none " >
                 </div>
                 <div class="flex justify-between">
-                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
-                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-right-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></button>
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600" onclick="Back()" type="button"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600" onclick="Stepper(event)" type="button"><i class="ri-arrow-right-fill text-xl text-white text-shadow-md text-shadow-zinc-400 "></i></button>
                 </div>
             </div>
         </section>
-        <section class="flex gap-10 hidden">
+        <section class="flex gap-10 hidden" id="Section-3">
             <div class="w-[35%] h-[480px] bg-white rounded-2xl ">
-                <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-                <dotlottie-wc src="https://lottie.host/42a335c7-dd7e-478c-8bc1-e2a16022c512/omxbBI1brZ.lottie" style="width: 100%;height: 100%" speed="1" autoplay loop></dotlottie-wc>
+                <iframe class="w-full h-full" src="https://lottie.host/embed/42a335c7-dd7e-478c-8bc1-e2a16022c512/omxbBI1brZ.lottie"></iframe>
             </div>
             <div class="border-l border-white px-30 w-[60%] flex flex-col gap-8">
                 <div><p class="text-center text-white text-2xl font-bold font-[red_rose] text-shadow-md text-shadow-purple-700">Where should we send your tasty updates?</p>
@@ -99,7 +104,7 @@
                 </div>
                 <div class="flex gap-2 flex-col">
                     <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Your Email</label>
-                    <input type="text" name="Email" id="" placeholder="Eamil" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
+                    <input type="text" name="Email" id="" placeholder="Email" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
                     <label for="" class=" font-bold font-[red_rose] text-lg text-white text-shadow-md text-shadow-purple-700">Enter Password</label>
                     <input type="password" name="Password" id="" placeholder="Password" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
 
@@ -107,16 +112,15 @@
                     <input type="password" name="ConfirmPassword" id="" placeholder="Confirm Password" class="bg-purple-300 py-3 px-2 rounded-lg shadow-md  shadow-purple-600 focus:outline-none ">
                 </div>
                 <div class="flex justify-between">
-                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
-                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-right-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></button>
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600" onclick="Back()" type="button"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600" onclick="Stepper(event)" type="button"><i class="ri-arrow-right-fill text-xl text-white text-shadow-md text-shadow-zinc-400" ></i></button>
                 </div>
             </div>
         </section>
 
-        <section class="flex gap-10 hidden">
+        <section class="flex gap-10 hidden" id="Section-4">
             <div class="w-[35%] h-[480px] bg-white rounded-2xl ">
-                <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-                <dotlottie-wc src="https://lottie.host/918306b8-c0c9-4da1-aac0-e98e173ebe65/trE6bsOKV9.lottie" style="width: 100%;height: 100%" speed="1" autoplay loop></dotlottie-wc>
+                <iframe class="w-full h-full" src="https://lottie.host/embed/918306b8-c0c9-4da1-aac0-e98e173ebe65/trE6bsOKV9.lottie"></iframe>
             </div>
             <div class="border-l border-white px-30 w-[60%] flex flex-col gap-8">
                 <div><p class="text-center text-white text-2xl font-bold font-[red_rose] text-shadow-md text-shadow-purple-700">Let us know where you’re hungry!</p>
@@ -127,27 +131,28 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34296.558823788444!2d72.9192029!3d33.6216216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1754090065646!5m2!1sen!2s" width="100%" height="350" style="border: 2px;;" allowfullscreen="" loading="Faster" referrerpolicy="no-referrer-when-downgrade" class="rounded-3xl "></iframe>
                 </div>
                 <div class="flex justify-between pt-3 items-center">
-                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600" onclick="Back()" type="button"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
                     <a href="" class="text-white text-xl font-bold font-[red_rose] underline">Skip</a>
-                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600"><i class="ri-arrow-right-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></button>
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600" onclick="Stepper(event)" type="button"><i class="ri-arrow-right-fill text-xl text-white text-shadow-md text-shadow-zinc-400" ></i></button>
                 </div>
             </div>
         </section>
 
-       <section class="flex gap-8 ">
+       <section class="flex gap-8 hidden" id="Section-5">
                 <div class="bg-zinc-100 w-[30%] px-4 py-10 rounded-3xl">
-                <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-                <dotlottie-wc src="https://lottie.host/d0ff581c-968e-4dcb-ac26-70f023e1b8e3/Rx7bqenbUl.lottie" style="width: 300px;height: 300px" speed="1" autoplay loop></dotlottie-wc>
+                <iframe class="w-full h-full" src="https://lottie.host/embed/d0ff581c-968e-4dcb-ac26-70f023e1b8e3/Rx7bqenbUl.lottie"></iframe>
             </div>
             <div class="w-[60%] flex flex-col items-center text-center border-l-2 border-white">
                 <div class="flex flex-col  gap-8">
                     <p class="text-white font-bold text-5xl font-[red_rose]">Submit it now!</p>
                     <p class="text-white  text-xl font-[red_rose] font-semibold">Let’s make this official, what should we call you?</p>
                 </div>
-                <div class="flex justify-end w-full mt-70"> 
-                    <button class="bg-purple-300 text-xl font-[red_rose] font-bold px-5 py-3 rounded-2xl text-white shadow-lg">
-                        <p class="text-shadow-md text-shadow-zinc-400">Submit</p>
+                <div class="flex justify-between w-full mt-70 px-10"> 
+                    <button class="bg-purple-300 px-5 py-4 rounded-full shadow-md shadow-purple-600" onclick="Back()" type="button"><i class="ri-arrow-left-fill text-xl text-white text-shadow-md text-shadow-zinc-400"></i></i></button>
+                    <button class="bg-purple-300 text-xl font-[red_rose] font-bold px-5 py-3 rounded-2xl text-white shadow-lg" onclick="Stepper(event)" type="submit">
+                        <p class="text-shadow-md text-shadow-zinc-400" >Submit</p>
                     </button>
+                    
                 </div>
             </div>
         </section>
@@ -155,4 +160,110 @@
     </form>
     
 </body>
+<Script>
+    
+    const page_1 = document.getElementById("Section-1");
+    const page_2 = document.getElementById("Section-2");
+    const page_3 = document.getElementById("Section-3");
+    const page_4 = document.getElementById("Section-4");
+    const page_5 = document.getElementById("Section-5");
+    // Icons 
+    const Span_2 = document.getElementById("Span2");
+    const Span_3 = document.getElementById("Span3");
+    const Span_4 = document.getElementById("Span4");
+    const Span_5 = document.getElementById("Span5");
+
+    // Stepper 
+    const div1 = document.getElementById("div-1");
+    const div2 = document.getElementById("div-2");
+    const div3 = document.getElementById("div-3");
+    const div4 = document.getElementById("div-4");
+    const div5 = document.getElementById("div-5");
+    let counter = 0;
+    function Stepper(event)
+    {
+
+
+        counter++;
+        console.log(counter);
+        console.log(counter)
+        if(counter === 1)
+        {
+            page_1.classList.add("hidden");
+            page_2.classList.remove("hidden");
+            div2.classList.add('before-green');
+            Span_2.style.backgroundColor = "#00A63E";
+        }
+
+        else if(counter === 2)
+        {
+            
+        console.log(counter)
+            page_2.classList.add("hidden");
+            page_3.classList.remove("hidden");
+            div3.classList.add('before-green');
+            Span_3.style.backgroundColor = "#00A63E";
+        }
+
+        else if(counter === 3)
+        {
+            
+        console.log(counter)
+            page_3.classList.add("hidden");
+            page_4.classList.remove("hidden");
+            div4.classList.add('before-green');
+            Span_4.style.backgroundColor = "#00A63E";
+        }
+
+        else if(counter === 4)
+        {
+            
+        console.log(counter)
+            page_4.classList.add("hidden");
+            page_5.classList.remove("hidden");
+            div5.classList.add('before-green');
+            Span_5.style.backgroundColor = "#00A63E";
+        }
+        
+        console.log(counter);
+    }
+
+    function Back()
+    {
+        counter--;
+
+        if(counter == 3)
+        {
+            page_5.classList.add("hidden")
+            page_4.classList.remove("hidden");
+            div5.classList.remove('before-green');
+            Span_5.style.backgroundColor = "#4A5565";
+        }
+
+        else if(counter == 2)
+        {
+            page_4.classList.add("hidden")
+            page_3.classList.remove("hidden");
+            div4.classList.remove('before-green');
+            Span_4.style.backgroundColor = "#4A5565";
+        }
+
+        else if(counter == 1)
+        {
+            page_3.classList.add("hidden")
+            page_2.classList.remove("hidden");
+            div3.classList.remove('before-green');
+            Span_3.style.backgroundColor = "#4A5565";
+        }   
+
+        else if(counter == 0)
+        {
+            page_2.classList.add("hidden")
+            page_1.classList.remove("hidden");
+            div2.classList.remove('before-green');
+            Span_2.style.backgroundColor = "#4A5565";
+            
+        }
+    }
+</Script>
 </html>
